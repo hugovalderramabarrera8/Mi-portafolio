@@ -1,0 +1,30 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package tema4;
+
+/**
+ *
+ * @author 20_1DAW
+ */
+public class Tema4_Ejercicio16 {
+    public static void main(String[] args) {
+        int[] numeros = {3, 5, 2, 3, 7, 5, 9, 1};
+
+        System.out.println("Elementos que aparecen una sola vez:");
+        for (int i = 0; i < numeros.length; i++) {
+            int veces = 0;
+            for (int j = 0; j < numeros.length; j++) {
+                if (numeros[i] == numeros[j]) {
+                    veces++;
+                }
+            }
+
+            if (veces == 1) {
+                System.out.println(numeros[i]);
+            }
+        }
+    }
+}
+
